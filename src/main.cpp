@@ -12,6 +12,6 @@ void loop(){
     motor2.set_rpm(10);
     delay(1000);
     motor1.set_rpm(0);
-    motor2.set_rpm(0);jj
+    motor2.set_rpm(0);
     delay(DELAY_PERIOD);
 }
