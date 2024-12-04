@@ -22,7 +22,10 @@ const int32_t ENCODER_TICKS_PER_SHAFT_REV= ENCODER_TICKS_PER_REV * GEAR_RATIO;
 #define LEFT_MOTOR_ADDR 0x0B
 #define LEFT_MOTOR_DIRECTION 1 
 #define RIGHT_MOTOR_DIRECTION -1
+
+
 void drive_init();
 void drive(float linear_velocy, float angular_velocity); 
 void brake(); 
+int32_t left_position();
 #endif

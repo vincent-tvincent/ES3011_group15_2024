@@ -23,4 +23,12 @@ void drive(float linear_velocity, float angular_velocity){
     // set speed 
     left.set_velocity(left_velocity * LEFT_MOTOR_DIRECTION);
     right.set_velocity(right_velocity * RIGHT_MOTOR_DIRECTION);
+    
 }
+
+int32_t left_position(){
+    return left.get_position();
+}
+
+ 
+
