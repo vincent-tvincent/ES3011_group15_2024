@@ -45,7 +45,7 @@ uint8_t SmartMotor::set_position(int32_t pos) {
     return _set_pid_target(SET_TARGET_POS,&pos,sizeof(pos));
 }
 
-uint8_t SmartMotor::set_rpm(float vel) {
+uint8_t SmartMotor::set_velocity(float vel) {
     return _set_pid_target(SET_TARGET_VEL,&vel,sizeof(vel));
 }
 

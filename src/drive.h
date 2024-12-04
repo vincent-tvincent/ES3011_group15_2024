@@ -3,9 +3,10 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include<smartmotor.h>
+#include<math.h>
 
 // car dimentions (mm)
-#define wheel_radius 58
+#define wheel_radius 29 
 #define wheel_distance 115
 #define car_radius wheel_distance / 2
 
@@ -22,6 +23,6 @@ const int32_t ENCODER_TICKS_PER_SHAFT_REV= ENCODER_TICKS_PER_REV * GEAR_RATIO;
 #define LEFT_MOTOR_DIRECTION 1 
 #define RIGHT_MOTOR_DIRECTION -1
 void drive_init();
-int* drive(float velocity_input[2]); //TODO 
-void brake(); //TODO
+void drive(float linear_velocy, float angular_velocity); 
+void brake(); 
 #endif
