@@ -16,7 +16,7 @@ class SmartMotor {
     uint8_t tune_vel_pid(float, float, float);
     uint8_t set_direction(uint8_t);
     uint8_t set_position(int32_t);
-    uint8_t set_velocity(float);
+    uint8_t set_rpm(float);
     uint8_t reset();
     uint8_t get_address() { return _addr; }
     int32_t get_position() { return simc_read(_addr) -> position; }
